@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/online_icon"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/online" android:layout_below="@id/message_username"
+            android:layout_marginTop="10dp" android:layout_toRightOf="@id/message_profile_image"
+            android:layout_marginLeft="-15dp" android:visibility="gone"/>
+    <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" android:id="@+id/message_username"
+            android:textSize="18sp"
+            android:textStyle="bold" android:layout_toRightOf="@id/message_profile_image"
+            android:layout_centerVertical="false" android:layout_marginLeft="5dp" android:text="username"
+            android:textColor="#000"/>
+    <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" android:id="@+id/message_desp"
+            android:textSize="18sp"
+            android:layout_toRightOf="@id/message_profile_image"
+            android:layout_centerVertical="false" android:layout_marginLeft="5dp" android:text="message text"
+            android:textColor="@android:color/darker_gray" android:layout_below="@id/message_username"
+    />
+    <TextView
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/unseen_message_count"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" android:background="@drawable/circular_shape"
+            android:layout_marginRight="10dp" android:padding="5dp" android:textColor="#fff"
+            android:visibility="gone" android:textStyle="bold"/>
+</RelativeLayout>

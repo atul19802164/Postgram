@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Video Call" android:id="@+id/call_user"  app:showAsAction="always"
+    android:icon="@drawable/video_call_btn"
+    />
+    <item android:title="Block" android:id="@+id/block_unblock" app:showAsAction="never"/>
+
+</menu>

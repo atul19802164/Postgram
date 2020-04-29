@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:padding="5dp">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="@drawable/reciever_messages_layout"
+            android:layout_alignParentTop="true" android:padding="5dp" android:id="@+id/reciever_message_group"
+            android:visibility="visible">
+        <TextView
+                android:text="reciever date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_name_group"
+                android:textSize="12sp" android:textColor="@android:color/holo_blue_dark" android:textStyle="bold"
+                android:maxWidth="300dp" android:minWidth="50dp"/>
+        <TextView
+                android:text="reciever message here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_message_text_group"
+                android:layout_marginTop="10dp" android:textColor="#000"
+                android:maxWidth="300dp" android:textSize="16sp" android:minWidth="50dp"/>
+        <TextView
+                android:text="reciever date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_date_group"
+                android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:background="@drawable/sender_messages_layout" android:padding="5dp"
+            android:id="@+id/sender_message_group">
+        <TextView
+                android:text="sender message here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_message_text_group"
+                android:layout_marginTop="10dp" android:textColor="#000"
+                android:maxWidth="300dp" android:textSize="16sp" android:minWidth="50dp"/>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_date_group" android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="@drawable/reciever_messages_layout"
+            android:layout_alignParentTop="true" android:padding="5dp" android:id="@+id/reciever_message_image_group"
+            tools:visibility="invisible">
+        <TextView
+                android:text="reciever date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_name_message_group"
+                android:textSize="10sp" android:textColor="@android:color/holo_blue_dark" android:textStyle="bold"
+                android:minWidth="50dp" android:maxWidth="300dp"/>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp" android:id="@+id/reciever_image_group"
+                android:layout_marginTop="10dp" android:textColor="#000"
+                android:textSize="16sp" app:srcCompat="@drawable/profile" android:scaleType="centerCrop"/>
+        <TextView
+                android:text="reciever date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_date_image_group"
+                android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:background="@drawable/sender_messages_layout" android:padding="5dp"
+            android:id="@+id/sender_message_image_group" android:visibility="gone" tools:visibility="gone">
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp" android:id="@+id/sender_image_group"
+                app:srcCompat="@drawable/profile" android:scaleType="centerCrop"/>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_date_image_group"
+                android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

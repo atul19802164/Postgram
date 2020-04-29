@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Group Members" android:id="@+id/group_member"/>
+    <item android:title="Add Member" android:id="@+id/add_member"/>
+    <item android:title="Edit Group Icon" android:id="@+id/change_icon"/>
+    <item android:title="Edit Group Name" android:id="@+id/change_name"/>
+    <item android:title="Exit Group" android:id="@+id/exit_group"/>
+</menu>

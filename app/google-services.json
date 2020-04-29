@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "855214676581",
+    "firebase_url": "https://postgram-3798f.firebaseio.com",
+    "project_id": "postgram-3798f",
+    "storage_bucket": "postgram-3798f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855214676581:android:4a093949faa9fff8",
+        "android_client_info": {
+          "package_name": "com.example.postgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855214676581-f44hqe6jrreekbrlgaok88acoi583dvr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.postgram",
+            "certificate_hash": "df837135a882a967640037a79b6602635d7e7d6c"
+          }
+        },
+        {
+          "client_id": "855214676581-mf79eiqebv5u8japnp81rrv2k904e7mf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.postgram",
+            "certificate_hash": "6050ee2f85e615dd61736286b2eb91ef45e23ca4"
+          }
+        },
+        {
+          "client_id": "855214676581-ha9hd6dqukm9m5j6t29h03a541vvc9ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE5hSz9bEX0Pod3X0PAODkJxECJDujADY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855214676581-ha9hd6dqukm9m5j6t29h03a541vvc9ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855214676581:android:aee8d8fb28a7a4361cc48c",
+        "android_client_info": {
+          "package_name": "com.tathagat.postgram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855214676581-e1rjcv0lks85fg9v3mgrsuadnagdhajl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tathagat.postgram",
+            "certificate_hash": "df837135a882a967640037a79b6602635d7e7d6c"
+          }
+        },
+        {
+          "client_id": "855214676581-ha9hd6dqukm9m5j6t29h03a541vvc9ki.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE5hSz9bEX0Pod3X0PAODkJxECJDujADY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855214676581-ha9hd6dqukm9m5j6t29h03a541vvc9ki.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

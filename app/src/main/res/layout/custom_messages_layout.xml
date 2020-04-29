@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingLeft="5dp" android:paddingRight="5dp"
+                android:paddingBottom="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_profile_image"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            android:visibility="invisible"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="@drawable/sender_messages_layout"
+            android:padding="5dp" android:id="@+id/sender_message_story" android:layout_alignParentRight="true"
+            android:visibility="gone">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" app:srcCompat="@drawable/profile"
+                    android:id="@+id/sender_message_storypic"
+                    android:scaleType="centerCrop"/>
+            <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" android:id="@+id/sender_story_message"
+                    android:layout_below="@id/sender_message_storypic" android:textColor="#000"/>
+        </RelativeLayout>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_date_story"
+                android:textSize="10sp" android:layout_gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:background="@drawable/reciever_messages_layout"
+            android:padding="5dp" android:id="@+id/reciever_message_story"
+            android:layout_toRightOf="@id/message_profile_image"
+            android:visibility="gone">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp" app:srcCompat="@drawable/profile"
+                    android:id="@+id/reciever_message_storypic"
+                    android:scaleType="centerCrop"/>
+            <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" android:id="@+id/reciever_story_message"
+                    android:layout_below="@id/reciever_message_storypic"
+
+                    android:textColor="#000"/>
+
+        </RelativeLayout>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_date_story"
+                android:textSize="10sp" android:layout_gravity="right"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:background="@drawable/sender_messages_layout" android:padding="5dp"
+            android:id="@+id/sender_message_video" android:visibility="invisible">
+        <tcking.github.com.giraffeplayer2.VideoView
+                android:id="@+id/sender_video"
+                android:layout_width="300dp"
+                android:layout_height="300dp"/>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_date_video" android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/reciever_messages_layout" android:padding="5dp"
+            android:id="@+id/reciever_message_video" android:layout_toRightOf="@id/message_profile_image"
+            android:visibility="invisible">
+        <tcking.github.com.giraffeplayer2.VideoView
+                android:id="@+id/reciever_video"
+                android:layout_width="300dp"
+                android:layout_height="300dp"/>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_date_video"
+                android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/message_profile_image"
+            android:layout_height="wrap_content" android:background="@drawable/reciever_messages_layout"
+            android:layout_alignParentTop="true" android:padding="5dp" android:id="@+id/reciever_message_image"
+            android:visibility="invisible">
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp" android:id="@+id/reciever_image"
+                android:layout_marginTop="10dp" android:textColor="#000"
+                android:textSize="16sp" app:srcCompat="@drawable/profile" android:scaleType="centerCrop"/>
+        <TextView
+                android:text="reciever date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_date_image"
+                android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/message_profile_image"
+            android:layout_height="wrap_content" android:background="@drawable/reciever_messages_layout"
+            android:layout_alignParentTop="true" android:padding="5dp" android:id="@+id/reciever_message"
+            android:visibility="invisible">
+        <TextView
+                android:text="reciever message here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_message_text"
+                android:layout_marginTop="10dp" android:textColor="#000"
+                android:maxWidth="300dp" android:textSize="16sp" android:minWidth="50dp"/>
+        <TextView
+                android:text="reciever date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/reciever_date" android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:background="@drawable/sender_messages_layout" android:padding="5dp"
+            android:id="@+id/sender_message" android:visibility="invisible">
+        <TextView
+                android:text="sender message here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_message_text"
+                android:layout_marginTop="10dp" android:textColor="#000"
+                android:maxWidth="300dp" android:textSize="16sp" android:minWidth="50dp"/>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_date" android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <TextView
+            android:text="delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/message_seen"
+            android:layout_below="@id/sender_message"
+            android:layout_alignParentBottom="false" android:layout_alignParentRight="true" android:visibility="gone"/>
+    <TextView
+            android:text="delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/message_seen_story"
+            android:layout_below="@id/sender_message_story"
+            android:layout_alignParentBottom="false" android:layout_alignParentRight="true"
+            android:visibility="gone"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentRight="true"
+            android:background="@drawable/sender_messages_layout" android:padding="5dp"
+            android:id="@+id/sender_message_image" android:visibility="invisible">
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp" android:id="@+id/sender_image"
+                app:srcCompat="@drawable/profile" android:scaleType="centerCrop"/>
+        <TextView
+                android:text="sender date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/sender_date_image" android:layout_gravity="right"
+                android:textSize="10sp"/>
+    </LinearLayout>
+    <TextView
+            android:text="delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/message_seen_image"
+            android:layout_below="@id/sender_message_image"
+            android:layout_alignParentBottom="false" android:layout_alignParentRight="true" android:visibility="gone"/>
+    <TextView
+            android:text="delivered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/message_seen_video"
+            android:layout_below="@id/sender_message_video"
+            android:layout_alignParentBottom="false" android:layout_alignParentRight="true" android:visibility="gone"/>
+</RelativeLayout>
